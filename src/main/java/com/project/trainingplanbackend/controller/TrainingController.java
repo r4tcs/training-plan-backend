@@ -14,6 +14,7 @@ public class TrainingController {
     @Autowired
     private TrainingService trainingService;
 
+
     @GetMapping("/get-all-trainings")
     public List<Training> getAllTrainings(@RequestParam String monday, String sunday) {
         return trainingService.getAllTrainings(monday, sunday);
